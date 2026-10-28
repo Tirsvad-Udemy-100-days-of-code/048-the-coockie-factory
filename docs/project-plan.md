@@ -4,20 +4,21 @@
 | Key | Value |
 | --- | --- |
 | ID | PP-001 |
-| CrossReference | [BC-001], [SA-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005] |
+| CrossReference | [BC-001], [SA-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005], [MIL-006] |
 | Language | en |
 | Domain | it |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version (reviewed in RC-003) | [96a9a78] |
+| 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version (reviewed in RC-003) | [96a9a78] |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added MIL-006 purchase strategy improvement after the user asked for it in chat (reviewed in RC-015) | [638730d] |
 
 ---
 
 ## Purpose
 
-This plan schedules the five phases that deliver the Cookie Clicker bot inside the one-week limit of [BC-001].
+This plan schedules the six phases that deliver the Cookie Clicker bot inside the one-week limit of [BC-001].
 
 ## Planning Assumptions
 
@@ -35,6 +36,7 @@ This plan schedules the five phases that deliver the Cookie Clicker bot inside t
 | Upgrades and run | [MIL-003] | 2026-10-30 to 2026-10-31 | 2026-10-31 | S01 | none (technical tasks) | strategy, run_bot, main | |
 | Screenshots and README | [MIL-004] | 2026-10-31 to 2026-11-02 | 2026-11-02 | S01 | none (technical tasks) | Docker run, screenshots, README | |
 | Wiki and release | [MIL-005] | 2026-11-02 to 2026-11-04 | 2026-11-04 | S01 | none (technical tasks) | Wiki en, da, ms and final checks | |
+| Purchase strategy improvement | [MIL-006] | 2026-10-28 to 2026-11-03 | 2026-11-03 | S01 | none (technical tasks) | Reliable store visits, upgrades bought, a higher CPS in Docker, README and wiki updated | |
 
 ```plantuml
 @startgantt
@@ -48,7 +50,9 @@ Project starts 2026-10-28
 [MIL-002 Go/No-Go] happens 2026-10-30
 [MIL-003 Go/No-Go] happens 2026-10-31
 [MIL-004 Go/No-Go] happens 2026-11-02
+[Purchase strategy] starts 2026-10-28 and ends 2026-11-03
 [MIL-005 Go/No-Go] happens 2026-11-04
+[MIL-006 Go/No-Go] happens 2026-11-03
 @endgantt
 ```
 
@@ -63,12 +67,15 @@ Project starts 2026-10-28
 | README | MIL-004 |
 | Wiki in en, da and ms | MIL-005 |
 | Description and topics on the git host | MIL-001 |
+| Higher CPS by a more reliable purchase strategy (objective O1) | MIL-006 |
 
 ## Dependencies
 
 ```
-MIL-001 → MIL-002 → MIL-003 → MIL-004 → MIL-005
+MIL-001 → MIL-002 → MIL-003 → MIL-004 → MIL-005 → MIL-006
 ```
+
+MIL-006 was added after the first release; it runs beside the end of the window and must finish by 2026-11-03, one day before the end date.
 
 A No-Go on a phase returns it to its owner for rework and moves every later gateway by the rework time; the end date 2026-11-04 moves only if S01 decides so and records the reason in Planning Assumptions. S01 is owner, reviewer and the only escalation point.
 
@@ -81,6 +88,7 @@ A No-Go on a phase returns it to its owner for rework and moves every later gate
 | Repository name differs from the one in the request | Metadata set on the wrong repository | Use the repository `origin` points to; reported in the plan summary |
 | Token handling (Business Case risk: a token leaks) | Secret exposure | Tokens only read from `.env` by scripts outside the project, never printed |
 | Live game changes (Business Case risk: page structure changes) | Bot breaks | Ids in `constants.py`; run the capture early in MIL-004 |
+| The new strategy does not raise the CPS | MIL-006 returns No-Go | Measure after each change; keep the first release as the fallback |
 
 ## Open Issues
 
@@ -112,4 +120,6 @@ A No-Go on a phase returns it to its owner for rework and moves every later gate
 [MIL-003]: ./milestones/mil-003-upgrades-and-five-minute-run.md
 [MIL-004]: ./milestones/mil-004-screenshots-and-readme.md
 [MIL-005]: ./milestones/mil-005-wiki-and-release.md
+[MIL-006]: ./milestones/mil-006-purchase-strategy.md
 [96a9a78]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/96a9a78f010ce8ae3fce8d84602317d8b5808a13
+[638730d]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/638730d95ba24ba77c6448730d7999aa3e90d863
