@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version (reviewed in RC-014) | pending |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version (reviewed in RC-014) | [638730d] |
 
 ---
 
@@ -69,3 +69,4 @@ The functions `buy_upgrade`, `get_store_items` and `run_bot` changed so that the
 ---
 
 [BC-001]: ../business-case.md
+[638730d]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/638730d95ba24ba77c6448730d7999aa3e90d863

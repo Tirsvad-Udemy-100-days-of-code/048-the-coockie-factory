@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version (reviewed in RC-003) | [96a9a78] |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added MIL-006 purchase strategy improvement after the user asked for it in chat (reviewed in RC-015) | pending |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added MIL-006 purchase strategy improvement after the user asked for it in chat (reviewed in RC-015) | [638730d] |
 
 ---
 
@@ -122,3 +122,4 @@ A No-Go on a phase returns it to its owner for rework and moves every later gate
 [MIL-005]: ./milestones/mil-005-wiki-and-release.md
 [MIL-006]: ./milestones/mil-006-purchase-strategy.md
 [96a9a78]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/96a9a78f010ce8ae3fce8d84602317d8b5808a13
+[638730d]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/638730d95ba24ba77c6448730d7999aa3e90d863
