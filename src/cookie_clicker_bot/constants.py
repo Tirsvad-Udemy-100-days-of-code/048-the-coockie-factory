@@ -29,6 +29,33 @@ COOKIE_COUNTER_ID: str = "cookies"
 ## Element id of the line that shows the cookies per second.
 CPS_ID: str = "cookiesPerSecond"
 
+## Number of products in the store.
+PRODUCT_COUNT: int = 20
+
+## Element id prefix of a store product; the product index follows.
+PRODUCT_ID_PREFIX: str = "product"
+
+## Element id prefix of the price of a store product; the product index follows.
+PRODUCT_PRICE_ID_PREFIX: str = "productPrice"
+
+## Attribute that holds the CSS classes of an element.
+CLASS_ATTRIBUTE: str = "class"
+
+## Class of a product that is visible in the store.
+UNLOCKED_CLASS: str = "unlocked"
+
+## Class of a product the player can afford.
+ENABLED_CLASS: str = "enabled"
+
+## Clicks on the big cookie between two looks at the clock.
+CLICKS_PER_BURST: int = 20
+
+## Separator between the label and the amount in the cookies per second line.
+CPS_SEPARATOR: str = ":"
+
+## Label printed before the cookies per second at the end of the run.
+RESULT_LABEL: str = "Result"
+
 ## Number words the game prints for large amounts, with their value.
 NUMBER_SCALES: dict[str, int] = {
     "thousand": 10**3,

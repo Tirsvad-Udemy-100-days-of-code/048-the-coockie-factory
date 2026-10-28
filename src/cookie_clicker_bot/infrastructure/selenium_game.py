@@ -64,6 +64,15 @@ class SeleniumGame:
         """
         return self._driver.find_element(By.ID, element_id).text
 
+    def read_attribute(self, element_id: str, attribute: str) -> str:
+        """@brief Return an attribute of the element.
+        @param element_id The HTML id of the element.
+        @param attribute The attribute name, for example "class".
+        @return The value, or an empty string when the attribute is absent.
+        """
+        value = self._driver.find_element(By.ID, element_id).get_attribute(attribute)
+        return value or ""
+
     def close(self) -> None:
         """@brief Quit the browser and end the driver session."""
         self._driver.quit()

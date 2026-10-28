@@ -32,3 +32,11 @@ class GamePort(Protocol):
         @return The text as shown on the page.
         """
         ...
+
+    def read_attribute(self, element_id: str, attribute: str) -> str:
+        """@brief Return an attribute of the element.
+        @param element_id The HTML id of the element.
+        @param attribute The attribute name, for example "class".
+        @return The value, or an empty string when the attribute is absent.
+        """
+        ...
