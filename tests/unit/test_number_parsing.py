@@ -2,10 +2,15 @@
 @brief Tests of parse_game_number.
 """
 
+from decimal import Decimal
+
 import pytest
 
 from cookie_clicker_bot.domain.errors import UnreadableNumberError
-from cookie_clicker_bot.domain.number_parsing import parse_game_number
+from cookie_clicker_bot.domain.number_parsing import (
+    parse_game_decimal,
+    parse_game_number,
+)
 
 
 @pytest.mark.parametrize(
@@ -41,6 +46,24 @@ def test_parse_ignores_unknown_word_after_the_number() -> None:
 
 def test_parse_rounds_decimals() -> None:
     assert parse_game_number("7.6 cookies") == 8
+
+
+@pytest.mark.parametrize(
+    ("text", "expected"),
+    [
+        ("0.1", Decimal("0.1")),
+        ("1,234.5", Decimal("1234.5")),
+        ("1.234 million", Decimal("1234000")),
+        ("7", Decimal(7)),
+    ],
+)
+def test_parse_decimal_keeps_the_decimals(text: str, expected: Decimal) -> None:
+    assert parse_game_decimal(text) == expected
+
+
+def test_parse_decimal_rejects_text_without_a_number() -> None:
+    with pytest.raises(UnreadableNumberError):
+        parse_game_decimal("none")
 
 
 @pytest.mark.parametrize("text", ["", "cookies", "-5", "per second: 3"])

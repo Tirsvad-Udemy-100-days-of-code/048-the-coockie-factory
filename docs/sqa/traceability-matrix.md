@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added ADR-0001, RC-009 and RC-010 | [ad3334f] |
 | 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-011 (MIL-002 source review) | [68c4391] |
+| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-012 (MIL-003 source review) | [cb8e5ed] |
 
 ---
 
@@ -29,7 +29,7 @@ updated whenever an artifact instance is created or reviewed.
 | [PP-001] | PP | en | it | [BC-001], [SA-001] | [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005] | [RC-003] |
 | [MIL-001] | MIL | en | it | [PP-001] | [MIL-002], [ADR-0001] | [RC-004], [RC-010] |
 | [MIL-002] | MIL | en | it | [MIL-001] | [MIL-003] | [RC-005], [RC-011] |
-| [MIL-003] | MIL | en | it | [MIL-002] | [MIL-004] | [RC-006] |
+| [MIL-003] | MIL | en | it | [MIL-002] | [MIL-004] | [RC-006], [RC-012] |
 | [MIL-004] | MIL | en | it | [MIL-003] | [MIL-005] | [RC-007] |
 | [MIL-005] | MIL | en | it | [MIL-004] | - | [RC-008] |
 | [ADR-0001] | ADR | - | - | [BC-001], [SA-001], [MIL-001] | - | [RC-009] |
@@ -73,6 +73,7 @@ updated whenever an artifact instance is created or reviewed.
 [RC-008]: ./reviews/rc-008-mil-005-wiki-and-release.md
 [RC-009]: ./reviews/rc-009-adr-0001-selenium-runtime-dependency.md
 [RC-010]: ./reviews/rc-010-mil-001-source.md
-[ad3334f]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/ad3334fa13c4261c3d034fbffcc7b43fe95fbb31
 [RC-011]: ./reviews/rc-011-mil-002-source.md
 [68c4391]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/68c439137f13299e20cf6271e392365d9f5371c4
+[RC-012]: ./reviews/rc-012-mil-003-source.md
+[cb8e5ed]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/cb8e5edfbf5acd1d0553568c11be7bbb4c5e5e1c

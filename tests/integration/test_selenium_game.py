@@ -17,9 +17,15 @@ from cookie_clicker_bot.infrastructure.selenium_game import SeleniumGame
 class FakeElement:
     """@brief An element that counts its real clicks."""
 
-    def __init__(self, text: str = "") -> None:
+    def __init__(
+        self, text: str = "", attributes: dict[str, str | None] | None = None
+    ) -> None:
         self.text = text
+        self.attributes = attributes or {}
         self.clicks = 0
+
+    def get_attribute(self, name: str) -> str | None:
+        return self.attributes.get(name)
 
     def is_displayed(self) -> bool:
         return True
@@ -95,6 +101,21 @@ def test_read_text_raises_when_element_is_missing() -> None:
 
     with pytest.raises(NoSuchElementException):
         game.read_text("missing")
+
+
+def test_read_attribute_returns_the_attribute_value() -> None:
+    driver = FakeDriver(
+        {"product0": FakeElement(attributes={"class": "product unlocked"})}
+    )
+
+    assert make_game(driver).read_attribute("product0", "class") == "product unlocked"
+    assert driver.lookups == [(By.ID, "product0")]
+
+
+def test_read_attribute_returns_empty_string_when_absent() -> None:
+    driver = FakeDriver({"product0": FakeElement()})
+
+    assert make_game(driver).read_attribute("product0", "class") == ""
 
 
 def test_close_quits_the_driver() -> None:
