@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | <reviewer S-ID> | Initial version | pending |
+| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | <reviewer S-ID> | Initial version | [96a9a78] |
 
 ---
 
@@ -68,3 +68,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-006]: ./reviews/rc-006-mil-003-upgrades-and-five-minute-run.md
 [RC-007]: ./reviews/rc-007-mil-004-screenshots-and-readme.md
 [RC-008]: ./reviews/rc-008-mil-005-wiki-and-release.md
+[96a9a78]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/96a9a78f010ce8ae3fce8d84602317d8b5808a13
