@@ -1,0 +1,123 @@
+INFO:__main__:Read 15 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 18 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:6 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 100 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:11 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 115 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:16 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 133 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:23 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 20 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 23 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 27 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 31 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:28 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 35 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 40 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:33 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 46 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 53 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:39 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 61 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:45 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 153 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:51 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 70 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:56 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 175 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:62 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 81 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:67 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 93 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:72 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 107 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:78 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 123 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:83 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 141 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:89 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 162 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:95 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:101 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 202 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:107 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 186 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:112 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:117 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 232 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:123 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 214 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:129 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:134 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 267 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:140 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:146 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 306 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:151 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:157 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 246 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:162 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:167 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 352 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:172 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:178 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 283 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:184 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:190 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 325 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:195 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:201 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 405 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:207 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:213 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 374 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:218 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:223 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:229 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 466 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:234 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:240 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 430 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 0 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:246 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:251 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:256 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 536 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:262 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:268 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:273 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 0 for 494 cookies
+INFO:cookie_clicker_bot.application.use_cases.run_bot:278 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:283 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:289 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Bought product 1 for 616 cookies
+WARNING:cookie_clicker_bot.application.use_cases.run_bot:Purchase of product 1 did not raise the owned amount
+INFO:cookie_clicker_bot.application.use_cases.run_bot:294 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:299 of 300 seconds played
+INFO:cookie_clicker_bot.application.use_cases.run_bot:Run finished at 16.6 cookies per second
+Result : 16.6
+exit 0

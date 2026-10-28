@@ -29,7 +29,7 @@ def _buy_while_affordable(game: GamePort) -> int:
     while (item := choose_upgrade(get_store_items(game))) is not None:
         if not buy_upgrade(game, item):
             _logger.warning(
-                "Purchase of product %d did not lower the cookies", item.index
+                "Purchase of product %d did not raise the owned amount", item.index
             )
             break
         bought += 1

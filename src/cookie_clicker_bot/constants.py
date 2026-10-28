@@ -38,6 +38,15 @@ PRODUCT_ID_PREFIX: str = "product"
 ## Element id prefix of the price of a store product; the product index follows.
 PRODUCT_PRICE_ID_PREFIX: str = "productPrice"
 
+## Element id prefix of the owned amount of a store product; the product index follows.
+PRODUCT_OWNED_ID_PREFIX: str = "productOwned"
+
+## Reads of the owned amount after a purchase click, as the game redraws late.
+OWNED_CHECK_ATTEMPTS: int = 20
+
+## Times an action on the page is repeated after a stale or blocked element.
+CLICK_RETRIES: int = 3
+
 ## Attribute that holds the CSS classes of an element.
 CLASS_ATTRIBUTE: str = "class"
 
@@ -55,6 +64,36 @@ CPS_SEPARATOR: str = ":"
 
 ## Label printed before the cookies per second at the end of the run.
 RESULT_LABEL: str = "Result"
+
+## Environment variable that names the Chrome binary to start.
+CHROME_BIN_ENV: str = "CHROME_BIN"
+
+## Environment variable that names the chromedriver executable to use.
+CHROMEDRIVER_ENV: str = "CHROMEDRIVER"
+
+## Screenshot file name of lecture step 1, the game opened at the language prompt.
+SCREENSHOT_OPEN_GAME: str = "step-1-open-game.png"
+
+## Screenshot file name of lecture step 2, after the first clicks on the cookie.
+SCREENSHOT_CLICK_COOKIE: str = "step-2-click-cookie.png"
+
+## Screenshot file name of lecture step 3, after the cookie count was read.
+SCREENSHOT_READ_COUNT: str = "step-3-read-count.png"
+
+## Screenshot file name of lecture step 4, after an upgrade was bought.
+SCREENSHOT_BUY_UPGRADE: str = "step-4-buy-upgrade.png"
+
+## Screenshot file name of lecture step 5, after the full run.
+SCREENSHOT_RESULT: str = "step-5-result.png"
+
+## File name of the record of what each capture step read and did.
+STEPS_RECORD_FILE: str = "steps.json"
+
+## Clicks on the big cookie in lecture step 2 of the capture.
+CAPTURE_CLICK_COUNT: int = 15
+
+## Most bursts of clicks the capture makes while it waits for an affordable product.
+CAPTURE_MAX_BURSTS: int = 200
 
 ## Number words the game prints for large amounts, with their value.
 NUMBER_SCALES: dict[str, int] = {
