@@ -13,10 +13,14 @@ class FakeGame:
         texts: dict[str, str] | None = None,
         attributes: dict[tuple[str, str], str] | None = None,
         on_click: Callable[[str], None] | None = None,
+        text_sequences: dict[str, list[str]] | None = None,
     ) -> None:
         self.texts: dict[str, str] = texts or {}
         self.attributes: dict[tuple[str, str], str] = attributes or {}
         self.on_click = on_click
+        ## Texts returned one per read, before the plain text applies.
+        self.text_sequences: dict[str, list[str]] = text_sequences or {}
+        self.reads: dict[str, int] = {}
         self.opened: list[str] = []
         self.waited: list[str] = []
         self.clicked: list[str] = []
@@ -34,6 +38,10 @@ class FakeGame:
             self.on_click(element_id)
 
     def read_text(self, element_id: str) -> str:
+        self.reads[element_id] = self.reads.get(element_id, 0) + 1
+        queued = self.text_sequences.get(element_id)
+        if queued:
+            return queued.pop(0)
         return self.texts[element_id]
 
     def read_attribute(self, element_id: str, attribute: str) -> str:

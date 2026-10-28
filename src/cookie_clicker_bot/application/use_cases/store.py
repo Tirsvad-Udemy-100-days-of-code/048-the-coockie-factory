@@ -5,14 +5,15 @@
 from decimal import Decimal
 
 from cookie_clicker_bot.application.ports.game_port import GamePort
-from cookie_clicker_bot.application.use_cases.bot_core import get_cookie_count
 from cookie_clicker_bot.constants import (
     CLASS_ATTRIBUTE,
     CPS_ID,
     CPS_SEPARATOR,
     ENABLED_CLASS,
+    OWNED_CHECK_ATTEMPTS,
     PRODUCT_COUNT,
     PRODUCT_ID_PREFIX,
+    PRODUCT_OWNED_ID_PREFIX,
     PRODUCT_PRICE_ID_PREFIX,
     UNLOCKED_CLASS,
 )
@@ -41,15 +42,28 @@ def get_store_items(game: GamePort) -> list[StoreItem]:
     return items
 
 
+def _read_owned(game: GamePort, index: int) -> int:
+    """@brief Read how many of a product is owned; the game shows none as empty."""
+    text = game.read_text(PRODUCT_OWNED_ID_PREFIX + str(index)).strip()
+    return parse_game_number(text) if text else 0
+
+
 def buy_upgrade(game: GamePort, item: StoreItem) -> bool:
     """@brief Click a product and check that the purchase went through.
+
+    The game redraws the page a moment after the click, so the owned amount is
+    read again, up to OWNED_CHECK_ATTEMPTS times, until it has grown.
+
     @param game The game page to operate.
     @param item The product to buy.
-    @return True when the cookie count dropped after the click.
+    @return True when the owned amount of the product grew after the click.
+    @throws UnreadableNumberError When the owned amount shows no number.
     """
-    before = get_cookie_count(game)
+    before = _read_owned(game, item.index)
     game.click_element(PRODUCT_ID_PREFIX + str(item.index))
-    return get_cookie_count(game) < before
+    return any(
+        _read_owned(game, item.index) > before for _ in range(OWNED_CHECK_ATTEMPTS)
+    )
 
 
 def get_cps(game: GamePort) -> Decimal:

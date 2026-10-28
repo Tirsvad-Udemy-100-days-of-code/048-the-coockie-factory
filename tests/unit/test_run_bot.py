@@ -14,6 +14,7 @@ from cookie_clicker_bot.constants import (
     COOKIE_COUNTER_ID,
     CPS_ID,
     PRODUCT_ID_PREFIX,
+    PRODUCT_OWNED_ID_PREFIX,
     PRODUCT_PRICE_ID_PREFIX,
     RUN_DURATION_SECONDS,
     STORE_CHECK_INTERVAL_SECONDS,
@@ -31,6 +32,7 @@ def make_game(cookies: int = 100, price: int = 15) -> FakeGame:
             COOKIE_COUNTER_ID: f"{cookies} cookies",
             f"{PRODUCT_PRICE_ID_PREFIX}0": str(price),
             CPS_ID: "per second: 4.5",
+            f"{PRODUCT_OWNED_ID_PREFIX}0": "",
         },
         attributes={(PRODUCT, CLASS_ATTRIBUTE): "product unlocked enabled"},
     )
@@ -38,6 +40,7 @@ def make_game(cookies: int = 100, price: int = 15) -> FakeGame:
     def spend(element_id: str) -> None:
         if element_id == PRODUCT:
             game.texts[COOKIE_COUNTER_ID] = f"{cookies - price} cookies"
+            game.texts[f"{PRODUCT_OWNED_ID_PREFIX}0"] = "1"
             game.attributes[(PRODUCT, CLASS_ATTRIBUTE)] = "product unlocked disabled"
 
     game.on_click = spend
