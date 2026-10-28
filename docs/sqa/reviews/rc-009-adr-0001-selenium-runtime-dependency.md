@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [ad3334f] |
 
 ---
 
@@ -52,3 +52,4 @@ Go - All Mandatory criteria pass. Stand-in review, not independent.
 
 [ADR-0001]: ../../adr/adr-0001-selenium-runtime-dependency.md
 [QC-ADR-001]: ../../../framework/qc/artifacts/qc-adr.md
+[ad3334f]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/ad3334fa13c4261c3d034fbffcc7b43fe95fbb31

@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [ad3334f] |
 
 ---
 
@@ -59,3 +59,4 @@ Go - All Mandatory criteria pass or are not applicable to this skeleton. Stand-i
 
 [MIL-001]: ../../milestones/mil-001-project-setup.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[ad3334f]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/ad3334fa13c4261c3d034fbffcc7b43fe95fbb31

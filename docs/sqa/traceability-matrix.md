@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Proposed | Jens Tirsvad Nielsen | <reviewer S-ID> | Initial version | [96a9a78] |
-| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added ADR-0001, RC-009 and RC-010 | pending |
+| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added ADR-0001, RC-009 and RC-010 | [ad3334f] |
 
 ---
 
@@ -74,3 +74,4 @@ updated whenever an artifact instance is created or reviewed.
 [96a9a78]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/96a9a78f010ce8ae3fce8d84602317d8b5808a13
 [RC-009]: ./reviews/rc-009-adr-0001-selenium-runtime-dependency.md
 [RC-010]: ./reviews/rc-010-mil-001-source.md
+[ad3334f]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/ad3334fa13c4261c3d034fbffcc7b43fe95fbb31
