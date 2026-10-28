@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [68c4391] |
 
 ---
 
@@ -59,3 +59,4 @@ Go - All Mandatory criteria pass or are not applicable; the live-game behaviour 
 
 [MIL-002]: ../../milestones/mil-002-bot-core-open-and-click.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[68c4391]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/68c439137f13299e20cf6271e392365d9f5371c4
