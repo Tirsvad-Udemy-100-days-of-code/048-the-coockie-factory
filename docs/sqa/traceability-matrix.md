@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-012 (MIL-003 source review) | [cb8e5ed] |
-| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-013 (MIL-004 source review) | pending |
+| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-013 (MIL-004 source review) | [9a9ea53] |
 
 ---
 
@@ -77,3 +77,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-012]: ./reviews/rc-012-mil-003-source.md
 [cb8e5ed]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/cb8e5edfbf5acd1d0553568c11be7bbb4c5e5e1c
 [RC-013]: ./reviews/rc-013-mil-004-source.md
+[9a9ea53]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/9a9ea53cc17d0d4acb258855088ddf45b48b26ea
