@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-013 (MIL-004 source review) | [9a9ea53] |
 | 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added MIL-006, RC-014 and RC-015 | [638730d] |
+| 2026-10-28 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-016 and RC-017 (MIL-006 version 2 and its source review) | pending |
 
 ---
 
@@ -32,7 +32,7 @@ updated whenever an artifact instance is created or reviewed.
 | [MIL-003] | MIL | en | it | [MIL-002] | [MIL-004] | [RC-006], [RC-012] |
 | [MIL-004] | MIL | en | it | [MIL-003] | [MIL-005] | [RC-007], [RC-013] |
 | [MIL-005] | MIL | en | it | [MIL-004] | [MIL-006] | [RC-008] |
-| [MIL-006] | MIL | en | it | [MIL-005] | - | [RC-014] |
+| [MIL-006] | MIL | en | it | [MIL-005] | - | [RC-014], [RC-016], [RC-017] |
 | [ADR-0001] | ADR | - | - | [BC-001], [SA-001], [MIL-001] | - | [RC-009] |
 
 ## Concern Coverage
@@ -82,3 +82,5 @@ updated whenever an artifact instance is created or reviewed.
 [RC-014]: ./reviews/rc-014-mil-006-purchase-strategy.md
 [RC-015]: ./reviews/rc-015-pp-001-version-2.md
 [638730d]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/638730d95ba24ba77c6448730d7999aa3e90d863
+[RC-016]: ./reviews/rc-016-mil-006-version-2.md
+[RC-017]: ./reviews/rc-017-mil-006-source.md

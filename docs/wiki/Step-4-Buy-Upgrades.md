@@ -22,7 +22,7 @@ def choose_upgrade(items: Sequence[StoreItem]) -> StoreItem | None:
 
 - **Keep the decision pure.** `choose_upgrade` takes plain `StoreItem` values and returns one, so it is tested with no game at all (ties, none affordable, empty list).
 - **Confirm the result, do not assume it.** `buy_upgrade` checks that the owned amount (`productOwned<N>`) went up. Checking the cookie count first was wrong: the count keeps rising while the bot clicks.
-- **The page lags behind.** The live run showed that about 40 percent of the purchase attempts fail because the store flags are read just before the game redraws. The bot logs it and tries again at the next store check.
+- **The page lags behind.** The first release lost about 40 percent of its purchases: the game updates the price and owned text at once but the affordable flag only at its next redraw, so a second purchase in the same visit used a stale flag. Buying at most one product per store visit cut the failures to 1 of 49.
 - **The real game finds what fakes cannot.** The stale-element retry and the owned-amount check both came from running in Docker.
 
 Next: [Step 5: the five-minute run](Step-5-Five-Minute-Run)

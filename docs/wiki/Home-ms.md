@@ -17,4 +17,4 @@ Wiki ini menerangkan lima langkah kuliah. Setiap halaman mempunyai tangkapan skr
 | [Langkah 5: larian lima minit](Step-5-Five-Minute-Run-ms) | Melihat gelung, hasil dan larian Docker |
 | [Lampiran](Appendix-Documentation-ms) | Mencari dokumen projek |
 
-Hasil larian dalam tangkapan skrin: **16.6 kuki sesaat** selepas 300 saat.
+Hasil larian dalam tangkapan skrin: **29 kuki sesaat** selepas 300 saat.

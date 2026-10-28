@@ -17,4 +17,4 @@ Denne wiki gennemgår de fem trin fra forelæsningen. Hver side har et skærmbil
 | [Trin 5: kørslen på fem minutter](Step-5-Five-Minute-Run-da) | Se løkken, resultatet og Docker-kørslen |
 | [Appendiks](Appendix-Documentation-da) | Finde projektets dokumenter |
 
-Resultatet af kørslen på skærmbillederne: **16,6 cookies i sekundet** efter 300 sekunder.
+Resultatet af kørslen på skærmbillederne: **29 cookies i sekundet** efter 300 sekunder.

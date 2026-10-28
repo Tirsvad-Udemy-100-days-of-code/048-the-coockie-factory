@@ -20,6 +20,13 @@ class GamePort(Protocol):
         """
         ...
 
+    def has_element(self, element_id: str) -> bool:
+        """@brief Tell whether the element is on the page now.
+        @param element_id The HTML id of the element.
+        @return True when the page holds an element with the id.
+        """
+        ...
+
     def click_element(self, element_id: str) -> None:
         """@brief Click the element the way a user does.
         @param element_id The HTML id of the element.

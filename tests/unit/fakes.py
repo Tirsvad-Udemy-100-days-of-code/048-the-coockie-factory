@@ -14,13 +14,19 @@ class FakeGame:
         attributes: dict[tuple[str, str], str] | None = None,
         on_click: Callable[[str], None] | None = None,
         text_sequences: dict[str, list[str]] | None = None,
+        attribute_sequences: dict[tuple[str, str], list[str]] | None = None,
     ) -> None:
         self.texts: dict[str, str] = texts or {}
         self.attributes: dict[tuple[str, str], str] = attributes or {}
         self.on_click = on_click
         ## Texts returned one per read, before the plain text applies.
         self.text_sequences: dict[str, list[str]] = text_sequences or {}
+        ## Attribute values returned one per read, before the plain value applies.
+        self.attribute_sequences: dict[tuple[str, str], list[str]] = (
+            attribute_sequences or {}
+        )
         self.reads: dict[str, int] = {}
+        self.attribute_reads: dict[tuple[str, str], int] = {}
         self.opened: list[str] = []
         self.waited: list[str] = []
         self.clicked: list[str] = []
@@ -31,6 +37,12 @@ class FakeGame:
 
     def wait_for_element(self, element_id: str) -> None:
         self.waited.append(element_id)
+
+    def has_element(self, element_id: str) -> bool:
+        """An element exists when a text or an attribute is defined for it."""
+        return element_id in self.texts or any(
+            known == element_id for known, _ in self.attributes
+        )
 
     def click_element(self, element_id: str) -> None:
         self.clicked.append(element_id)
@@ -45,7 +57,12 @@ class FakeGame:
         return self.texts[element_id]
 
     def read_attribute(self, element_id: str, attribute: str) -> str:
-        return self.attributes.get((element_id, attribute), "")
+        key = (element_id, attribute)
+        self.attribute_reads[key] = self.attribute_reads.get(key, 0) + 1
+        queued = self.attribute_sequences.get(key)
+        if queued:
+            return queued.pop(0)
+        return self.attributes.get(key, "")
 
     def close(self) -> None:
         self.close_calls += 1

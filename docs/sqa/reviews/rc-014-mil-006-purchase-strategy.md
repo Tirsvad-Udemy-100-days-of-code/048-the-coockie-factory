@@ -15,7 +15,7 @@
 
 ## Artifact Under Review
 
-- Instance reviewed: MIL-006 ([MIL-006])
+- Instance reviewed: [MIL-006]
 - Checklist used: [QC-MIL-001]
 - Scope: full review
 - Language and domain: en / it (the artifact's Metadata rows)

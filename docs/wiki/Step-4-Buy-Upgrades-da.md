@@ -22,7 +22,7 @@ def choose_upgrade(items: Sequence[StoreItem]) -> StoreItem | None:
 
 - **Hold beslutningen ren.** `choose_upgrade` tager almindelige `StoreItem`-værdier og returnerer én, så den testes uden noget spil (lige priser, intet overkommeligt, tom liste).
 - **Bekræft resultatet, antag det ikke.** `buy_upgrade` tjekker, at det ejede antal (`productOwned<N>`) steg. At tjekke antallet af cookies først var forkert: antallet stiger, mens botten klikker.
-- **Siden halter bagefter.** Den rigtige kørsel viste, at cirka 40 procent af købsforsøgene mislykkes, fordi butikkens markeringer læses lige før spillet tegner om. Botten logger det og prøver igen ved næste butiksbesøg.
+- **Siden halter bagefter.** Den første version tabte cirka 40 procent af sine køb: spillet opdaterer pris og ejet antal med det samme, men markeringen af, om der er råd, først ved næste gentegning, så et andet køb i samme besøg brugte en forældet markering. Højst ét produkt pr. butiksbesøg gav kun 1 fejl ud af 49.
 - **Det rigtige spil finder det, falske ikke kan.** Genforsøget ved forældede elementer og tjekket af ejet antal kom begge fra kørsler i Docker.
 
 Næste: [Trin 5: kørslen på fem minutter](Step-5-Five-Minute-Run-da)

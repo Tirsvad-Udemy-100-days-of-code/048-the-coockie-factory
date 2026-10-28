@@ -94,6 +94,15 @@ class SeleniumGame:
         """
         _retry_on_page_change(lambda: self._click_once(element_id))
 
+    def has_element(self, element_id: str) -> bool:
+        """@brief Tell whether the element is on the page now.
+        @param element_id The HTML id of the element.
+        @return True when the page holds an element with the id.
+        """
+        return _retry_on_page_change(
+            lambda: bool(self._driver.find_elements(By.ID, element_id))
+        )
+
     def _click_once(self, element_id: str) -> None:
         element = WebDriverWait(self._driver, ELEMENT_TIMEOUT_SECONDS).until(
             expected_conditions.element_to_be_clickable((By.ID, element_id))

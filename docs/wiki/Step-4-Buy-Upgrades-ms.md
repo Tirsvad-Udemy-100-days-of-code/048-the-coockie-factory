@@ -22,7 +22,7 @@ def choose_upgrade(items: Sequence[StoreItem]) -> StoreItem | None:
 
 - **Pastikan keputusan bersih.** `choose_upgrade` menerima nilai `StoreItem` biasa dan memulangkan satu, jadi ia diuji tanpa permainan langsung (harga sama, tiada yang mampu dibeli, senarai kosong).
 - **Sahkan hasilnya, jangan andaikan.** `buy_upgrade` menyemak bahawa jumlah dimiliki (`productOwned<N>`) bertambah. Menyemak bilangan kuki dahulu adalah salah: bilangan terus meningkat semasa bot mengklik.
-- **Halaman ketinggalan.** Larian sebenar menunjukkan kira-kira 40 peratus percubaan pembelian gagal kerana bendera kedai dibaca sebelum permainan melukis semula. Bot mencatatkannya dan mencuba lagi pada lawatan kedai seterusnya.
+- **Halaman ketinggalan.** Keluaran pertama kehilangan kira-kira 40 peratus pembeliannya: permainan mengemas kini teks harga dan jumlah dimiliki serta-merta tetapi bendera mampu beli hanya pada lukisan semula seterusnya, jadi pembelian kedua dalam lawatan yang sama menggunakan bendera usang. Membeli paling banyak satu produk setiap lawatan mengurangkan kegagalan kepada 1 daripada 49.
 - **Permainan sebenar menemui apa yang tidak dapat ditemui oleh yang palsu.** Percubaan semula elemen usang dan semakan jumlah dimiliki kedua-duanya datang daripada larian dalam Docker.
 
 Seterusnya: [Langkah 5: larian lima minit](Step-5-Five-Minute-Run-ms)

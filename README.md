@@ -47,7 +47,7 @@ The bot follows the five steps of the lecture. Every step is one function with t
 
 ![Step 5: the bakery after five minutes](docs/images/step-5-result.png)
 
-In the run that made these screenshots the bot reached **16.6 cookies per second** after 300 seconds. Your number will differ: it depends on the speed of your machine and the network.
+In the run that made these screenshots the bot reached **29 cookies per second** after 300 seconds (the first release reached 16.6). Your number will differ: it depends on the speed of your machine and the network.
 
 ### Parts of the repository
 
