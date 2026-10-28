@@ -76,6 +76,12 @@ class FakeDriver:
         self.screenshots.append(filename)
         return True
 
+    def find_elements(self, by: str, value: str) -> list[FakeElement]:
+        self.lookups.append((by, value))
+        if self.lookup_failures:
+            raise self.lookup_failures.pop(0)
+        return [self.elements[value]] if value in self.elements else []
+
     def quit(self) -> None:
         self.quit_calls += 1
 
@@ -184,6 +190,20 @@ def test_read_attribute_raises_after_the_retry_limit() -> None:
 
     with pytest.raises(StaleElementReferenceException):
         make_game(driver).read_attribute("product0", "class")
+
+
+def test_has_element_tells_whether_the_id_is_on_the_page() -> None:
+    game = make_game(FakeDriver({"upgrade0": FakeElement()}))
+
+    assert game.has_element("upgrade0") is True
+    assert game.has_element("upgrade1") is False
+
+
+def test_has_element_retries_after_a_stale_element() -> None:
+    driver = FakeDriver({"upgrade0": FakeElement()})
+    driver.lookup_failures = [StaleElementReferenceException()] * CLICK_RETRIES
+
+    assert make_game(driver).has_element("upgrade0") is True
 
 
 def test_save_screenshot_creates_the_folder_and_writes_the_file(

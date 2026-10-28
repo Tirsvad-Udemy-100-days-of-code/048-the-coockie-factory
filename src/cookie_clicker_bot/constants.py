@@ -6,7 +6,7 @@
 RUN_DURATION_SECONDS: int = 300
 
 ## Seconds between two looks at the store while the bot keeps clicking.
-STORE_CHECK_INTERVAL_SECONDS: int = 5
+STORE_CHECK_INTERVAL_SECONDS: int = 1
 
 ## Seconds to wait for an element before the bot gives up.
 ELEMENT_TIMEOUT_SECONDS: int = 20
@@ -43,6 +43,19 @@ PRODUCT_OWNED_ID_PREFIX: str = "productOwned"
 
 ## Reads of the owned amount after a purchase click, as the game redraws late.
 OWNED_CHECK_ATTEMPTS: int = 20
+
+## Reads of a text after a purchase while the bot waits for the store to redraw.
+REDRAW_CHECK_ATTEMPTS: int = 20
+
+## Element id of the cheapest upgrade crate; the game numbers the crates by price
+## and numbers them again after each purchase.
+FIRST_UPGRADE_ID: str = "upgrade0"
+
+## Attribute of a crate that holds the id of the upgrade it shows.
+UPGRADE_IDENTITY_ATTRIBUTE: str = "data-id"
+
+## Most upgrades the bot buys in one visit to the store.
+UPGRADE_BUY_LIMIT: int = 50
 
 ## Times an action on the page is repeated after a stale or blocked element.
 CLICK_RETRIES: int = 3

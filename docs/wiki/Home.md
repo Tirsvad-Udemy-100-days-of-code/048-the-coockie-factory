@@ -17,4 +17,4 @@ This wiki walks through the five lecture steps. Each page has a screenshot taken
 | [Step 5: the five-minute run](Step-5-Five-Minute-Run) | See the loop, the result and the Docker run |
 | [Appendix](Appendix-Documentation) | Find the project documents |
 
-The result of the run shown in the screenshots: **16.6 cookies per second** after 300 seconds.
+The result of the run shown in the screenshots: **29 cookies per second** after 300 seconds.

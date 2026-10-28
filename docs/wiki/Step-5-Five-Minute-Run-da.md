@@ -2,7 +2,7 @@
 
 🌐 [English](Step-5-Five-Minute-Run) · **Dansk** · [Bahasa Melayu](Step-5-Five-Minute-Run-ms)
 
-`run_bot` spiller i 300 sekunder i én løkke: en byge på 20 klik, og hvert 5. sekund et besøg i butikken. Til sidst læser `get_cps` cookies i sekundet. Kørslen på skærmbilledet nåede **16,6 cookies i sekundet** med 26 markører og 14 bedstemødre.
+`run_bot` spiller i 300 sekunder i én løkke: en byge på 20 klik, og hvert sekund ét besøg i butikken: først opgraderingerne, så højst ét produkt. Til sidst læser `get_cps` cookies i sekundet. Kørslen på skærmbilledet nåede **29 cookies i sekundet** med 29 markører, 17 bedstemødre og 2 opgraderinger (den første version nåede 16,6).
 
 **Skærmbillede**
 
@@ -24,4 +24,4 @@ while now - start < duration_seconds:
 - **Én løkke, ingen tråde.** Den tidligere løsning brugte to tråde og en ekstra pakke. Én løkke er lettere at læse, kræver ingen ekstra afhængighed og er let at teste.
 - **Injicér uret.** `run_bot` får et `Clock`, så et falsk ur tester en kørsel på 300 sekunder på millisekunder.
 - **Kør GUI'en i Docker.** Headless Chromium i en container tager aldrig din mus eller dit tastatur, og skærmbillederne og loggen kommer ud som filer.
-- **Videre derfra.** Køb efter pris pr. cookie i sekundet, køb opgraderingerne og klik på den gyldne cookie: hver er en ny funktion bag de samme porte.
+- **Videre derfra.** Køb efter pris pr. cookie i sekundet og klik på den gyldne cookie: hver er en ny funktion bag de samme porte.
