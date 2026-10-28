@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version (reviewed in RC-014) | [638730d] |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Task 1 changed after the first measurement run: one product per store visit instead of waiting for a price change (reviewed in RC-016) | pending |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Task 1 changed after the first measurement run: one product per store visit instead of waiting for a price change (reviewed in RC-016) | [375cc0b] |
 
 ---
 
@@ -71,3 +71,4 @@ The functions `buy_upgrade`, `get_store_items` and `run_bot` changed so that the
 
 [BC-001]: ../business-case.md
 [638730d]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/638730d95ba24ba77c6448730d7999aa3e90d863
+[375cc0b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-the-coockie-factory/commit/375cc0b5f3919b00daeb2f8f5fcc81de25acfc4c
